@@ -1,3 +1,15 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<div style="text-align:center">
+	<div style="margin:0">
+		{{#link-to 'application' class="no-decoration"}}<h1 id="title" class="pass-status failed">NIE</h1>{{/link-to}}
+		{{#link-to "attempts"}}Ile to już razy? {{/link-to}}
+		{{outlet}}
 
-{{outlet}}
+		<div class="footer">
+		<hr>
+		<div class="last-update">
+		<p>Ostatnia aktualizacja: {{moment lastUpdate "Do MMM YYYY"}} </p>
+		<p>{{#link-to "about"}}o stronie {{/link-to}}</p>
+		</div>
+		</div>
+	</div>
+</div>

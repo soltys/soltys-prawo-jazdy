@@ -1,0 +1,35 @@
+.attmepts-list{
+	margin:0;
+	padding-left: 0;
+}
+
+.attempt-link{
+	list-style: none;
+}
+.failed{
+	color: #990000 ;
+}
+.passed{
+	color:#009900;
+}
+
+.pass-status{
+	font-size: 72pt;
+	text-decoration: none;
+}
+.no-decoration:link {
+    text-decoration: none;
+}
+.no-decoration:active {
+    text-decoration: none;
+}
+
+.no-decoration:hover{
+	text-decoration: none;
+}
+
+.no-decoration:visited {
+    text-decoration: none;
+}
+
+

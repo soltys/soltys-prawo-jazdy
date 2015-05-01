@@ -6,4 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 export default Router.map(function() {
+  this.resource('attempts',function(){
+  this.resource('attempt', { path:'/:attempt_id'});	
+  });
+
+  this.route('about');
 });

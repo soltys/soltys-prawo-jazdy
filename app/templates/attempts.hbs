@@ -1,0 +1,11 @@
+<div class="attempts">
+Ilość prób: {{model.attempts.length}}
+<ul class="attmepts-list">
+{{#each attempt in model.attempts}}
+
+<li class="attempt-link">{{#link-to "attempt" attempt.id}}Co zrobiłem źle za {{attempt.id}} razem? {{/link-to}}</li>
+
+{{/each}}
+</ul>
+{{outlet}}
+</div>
