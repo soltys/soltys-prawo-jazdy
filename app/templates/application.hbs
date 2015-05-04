@@ -1,15 +1,28 @@
-<div style="text-align:center">
-	<div style="margin:0">
-		{{#link-to 'application' class="no-decoration"}}<h1 id="title" class="pass-status failed">NIE</h1>{{/link-to}}
-		{{#link-to "attempts"}}Ile to już razy? {{/link-to}}
-		{{outlet}}
-
-		<div class="footer">
-		<hr>
-		<div class="last-update">
-		<p>Ostatnia aktualizacja: {{moment lastUpdate "Do MMM YYYY"}} </p>
-		<p>{{#link-to "about"}}o stronie {{/link-to}}</p>
-		</div>
-		</div>
-	</div>
+<div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-4">
+        {{#link-to 'application' class="no-decoration"}}<h1 id="title" class="pass-status failed">
+        <svg width="200" height="150">
+          <text y="100" fill="none" stroke="red" stroke-width="5" font-size="72"  stroke-dasharray="1000"
+          >NIE
+          </text>
+        </svg>
+        </h1>{{/link-to}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-4">
+        {{#link-to "attempts"}}Ile to już razy? {{/link-to}}
+        {{outlet}}
+        <div class="footer">
+          <hr>
+          <div class="last-update">
+            <p>Ostatnia aktualizacja: {{moment lastUpdate "Do MMM YYYY"}} </p>
+            <p>{{#link-to "about"}}o stronie {{/link-to}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

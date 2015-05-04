@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
 	model: function  () {
 		return{
-			version: "1"
+			version: "2"
 		};
 	}
 });
